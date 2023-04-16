@@ -1,0 +1,22 @@
+﻿@page
+@model TestCreator.Pages.AddElementTypeModel
+@{
+}
+
+<div class="container">
+
+    <form method="post">
+        <label for="ElementName" class="form-label">Element Name</label>
+        <input type="text" class="form-control" id="ElementName" asp-for="AddElementTypeRequest.ElementName">
+
+        <label for="LenghtCount" class="form-label">Lenght Count</label>
+        <input type="text" class="form-control" id="LenghtCount" asp-for="AddElementTypeRequest.LenghtCount">
+
+
+
+        <div class="mb-3" style="padding:10px">
+            <button class="btn btn-success" type="submit" >Submit</button>
+        </div>
+
+    </form>
+</div>

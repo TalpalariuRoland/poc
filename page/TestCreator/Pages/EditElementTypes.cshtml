@@ -1,0 +1,28 @@
+﻿@page "{id:Guid}"
+@model TestCreator.Pages.EditElementTypesModel
+@{
+}
+
+<div class="container">
+
+    <form method="post">
+
+        <label for="ID" class="form-label">ID</label>
+        <input type="text" class="form-control" id="ID" asp-for="ElementType.ID" readonly>
+
+        <label for="ElementName" class="form-label">Element Name</label>
+        <input type="text" class="form-control" id="ElementName" asp-for="ElementType.ElementName">
+
+        <label for="LenghtCount" class="form-label">Lenght/Count</label>
+        <input type="text" class="form-control" id="LenghtCount" asp-for="ElementType.LenghtCount">
+
+
+        <div class="mb-3 d-flex justify-content-between">
+            <button class="btn btn-primary" type="submit" asp-page-handler="Edit">Submit</button>
+
+            <button class="btn btn-danger" type="submit" asp-page-handler="Delete">Delete</button>
+
+        </div>
+
+    </form>
+</div>

@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TestCreator</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/LayoutStyles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/TestCreator.styles.css" asp-append-version="true" />
+
+</head>
+<body style="background-color:#c4faff">
+    <header>
+        <nav class="navBar">
+            <br>
+                <div class="left-div">
+                    <a class="linkedBtns" asp-page="/Index" >Test Creator Home Page</a>
+                    <a class="linkedBtns" asp-page="/AutoForm">Create Test</a>
+
+                <div class="dropdown">
+                    <a class="dropbtn" style="color:white"> Page Name</a>
+                        <div class="dropdown-content">
+                            <a asp-page="/AddPageName">AddPageName</a>
+                            <a asp-page="/PageNameList">PageNameList</a>
+                        </div>
+                </div>
+
+                <div class="dropdown">
+                    <a class="dropbtn" style="color:white">Element Type</a>
+                    <div class="dropdown-content">
+                        <a  asp-page="/AddElementType">Add Element type</a>
+
+                        <a asp-page="/ElementTypeList">Element Type List</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a class="dropbtn" style="color:white">Page Element</a>
+                    <div class="dropdown-content">
+                        <a asp-page="/AddPageElement">Add Page Element</a>
+
+                        <a asp-page="/PageElementList">Page Element List</a>
+                    </div>
+                </div>
+
+                </div>
+
+        </nav>
+    </header>
+
+            @RenderBody()
+
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - TestCreator - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

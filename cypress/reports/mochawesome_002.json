@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-04-16T19:53:02.296Z",
+    "end": "2023-04-16T19:53:02.783Z",
+    "duration": 487,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d74210b2-5c82-4109-a2c1-7de72d66607e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\2.cy.js",
+      "file": "cypress\\e2e\\2.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a5853e32-3a69-4c50-a8c0-57c7f8d00eca",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "template spec passes",
+              "timedOut": null,
+              "duration": 450,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('../../page/siteHtml.html');\n_HtmlPObj.default.selectCheckBox(3);\n_HtmlPObj.default.selectRadioBox(4);\n_HtmlPObj.default.selectCheckBox(7);\n_HtmlPObj.default.typeInTextbox('5');\ncy.wait(2000);",
+              "err": {
+                "message": "CypressError: `cy.click()` failed because it requires a DOM element.\n\nThe subject received was:\n\n  > `undefined`\n\nThe previous command that ran was:\n\n  > `cy.wrap()`",
+                "estack": "CypressError: `cy.click()` failed because it requires a DOM element.\n\nThe subject received was:\n\n  > `undefined`\n\nThe previous command that ran was:\n\n  > `cy.wrap()`\n    at isElement (http://localhost:59737/__cypress/runner/cypress_runner.js:151863:66)\n    at validateType (http://localhost:59737/__cypress/runner/cypress_runner.js:151712:14)\n    at Object.isType (http://localhost:59737/__cypress/runner/cypress_runner.js:151743:7)\n    at $Cy.pushSubject (http://localhost:59737/__cypress/runner/cypress_runner.js:151451:22)\n    at wrapped (http://localhost:59737/__cypress/runner/cypress_runner.js:151037:19)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/PageObj/HtmlPObj.js:10:44)",
+                "diff": null
+              },
+              "uuid": "1e8675ac-590f-4032-a696-a0c1d3a93aaa",
+              "parentUUID": "a5853e32-3a69-4c50-a8c0-57c7f8d00eca",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "1e8675ac-590f-4032-a696-a0c1d3a93aaa"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 450,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

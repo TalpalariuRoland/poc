@@ -1,0 +1,19 @@
+﻿@page
+@model TestCreator.Pages.AddPageNameModel
+@{
+}
+
+<div class="container">
+
+    <form method="post">
+        <label for="PageName" class="form-label">Page Name</label>
+        <input type="text" class="form-control" id="PageName" asp-for="AddPageRequest.PageName"> 
+
+
+
+            <br><center>
+            <button class="btn btn-success" type="submit">Submit</button>
+             </center>
+
+    </form>
+</div>

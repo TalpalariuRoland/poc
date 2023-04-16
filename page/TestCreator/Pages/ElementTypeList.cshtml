@@ -1,0 +1,30 @@
+﻿@page
+@model TestCreator.Pages.ElementTypeListModel
+@{
+}
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>Element Name</td>
+                <td>Lenght/Count</td>
+                <td> </td>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var types in Model.ElementTypes)
+            {
+
+                <tr>
+                    <td>@types.ID</td>
+                    <td>@types.ElementName</td>
+                    <td>@types.LenghtCount</td>
+                    <td><center><a href="EditElementTypes/@types.ID" class="listBtn">View</a></center></td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+</div>
