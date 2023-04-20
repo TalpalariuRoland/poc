@@ -1,0 +1,163 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2023-04-20T20:16:02.385Z",
+    "end": "2023-04-20T20:16:09.911Z",
+    "duration": 7526
+  },
+  "results": [
+    {
+      "uuid": "0d1d0851-4542-4c93-8cee-5b0ecf2f9062",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Test1.cy.js",
+      "file": "cypress\\e2e\\Test1.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "16df89fe-7d6e-4943-a20c-6f63b755b842",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "template spec passes",
+              "timedOut": null,
+              "duration": 2578,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('../../page/HtmlPage.html');\n_HtmlPObj.default.selectCheckBox(1);\n_HtmlPObj.default.selectRadioBox(2);\n_HtmlPObj.default.typeInTextbox('Text Box One');\ncy.wait(2000);",
+              "err": {},
+              "uuid": "f4372a60-d1db-4a26-abe2-590856bf8ac2",
+              "parentUUID": "16df89fe-7d6e-4943-a20c-6f63b755b842",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f4372a60-d1db-4a26-abe2-590856bf8ac2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2578,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "2451e573-24e1-4850-a217-ad2c5500d875",
+      "title": "",
+      "fullFile": "cypress\\e2e\\123.cy.js",
+      "file": "cypress\\e2e\\123.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f1354b66-e7a2-40d5-891a-bafa329b49a1",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "template spec passes",
+              "timedOut": null,
+              "duration": 4022,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('../../page/HtmlPage.html');\n_HtmlPObj.default.selectCheckBox(1);\n_HtmlPObj.default.selectRadioBox(3);\n_HtmlPObj.default.typeInTextbox('23123123123123123123123123111111222222222222222222222222222222222222222222222222222222222222222223');\n_HtmlPObj.default.selectRadioBox(1);\n_HtmlPObj.default.selectCheckBox(2);\n_HtmlPObj.default.selectCheckBox(3);\n_HtmlPObj.default.selectCheckBox(4);\ncy.wait(2000);",
+              "err": {},
+              "uuid": "0ba01cea-e3ce-4bed-9f87-232c35b9654d",
+              "parentUUID": "f1354b66-e7a2-40d5-891a-bafa329b49a1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0ba01cea-e3ce-4bed-9f87-232c35b9654d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4022,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+﻿@page
+@model TestCreator.Pages.PageElementListModel
+@{
+}
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>Page Name</td>
+                <td>Element type</td>
+                <td> </td>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var pageElement in Model.PageElements)
+            {
+
+                <tr>
+                    <td>@pageElement.ID</td>
+                    <td>
+                        @foreach(var pageName in Model.Pages){ 
+                        if(pageElement.PageNameID == pageName.ID){
+                                @pageName.PageName;
+                            }
+                    }
+                    </td>
+                    <td>
+                        @foreach(var elementType in Model.ElementTypes){
+                            if(pageElement.ElementTypeID == elementType.ID){
+                                @elementType.ElementName;
+                            }
+                        }
+                    </td>
+                    <td><a href="EditPageElement/@pageElement.ID" class="listBtn">View</a></td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+</div>

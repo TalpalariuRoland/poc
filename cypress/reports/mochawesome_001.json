@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 1,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2023-04-16T19:52:58.812Z",
-    "end": "2023-04-16T19:53:01.408Z",
-    "duration": 2596,
+    "failures": 1,
+    "start": "2023-04-20T20:21:53.152Z",
+    "end": "2023-04-20T20:21:53.470Z",
+    "duration": 318,
     "testsRegistered": 1,
-    "passPercent": 100,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,16 +18,16 @@
   },
   "results": [
     {
-      "uuid": "9ef0fccd-61cc-4680-b0c1-a62500dd963f",
+      "uuid": "65633f7a-0b07-49ce-8101-3ab38b0adaf2",
       "title": "",
-      "fullFile": "cypress\\e2e\\12312.cy.js",
-      "file": "cypress\\e2e\\12312.cy.js",
+      "fullFile": "cypress\\e2e\\Test1.cy.js",
+      "file": "cypress\\e2e\\Test1.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "ab939a57-c460-4ae6-a19a-de128221923e",
+          "uuid": "2ceda8a0-64cc-4736-8e59-bcc2e833d636",
           "title": "template spec",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,33 @@
               "title": "passes",
               "fullTitle": "template spec passes",
               "timedOut": null,
-              "duration": 2567,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
+              "duration": 283,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
-              "code": "cy.visit('../../page/siteHtml.html');\n_HtmlPObj.default.selectCheckBox(1);\n_HtmlPObj.default.selectRadioBox(2);\n_HtmlPObj.default.selectCheckBox(3);\n_HtmlPObj.default.typeInTextbox('4');\ncy.wait(2000);",
-              "err": {},
-              "uuid": "587c9780-c8be-49ef-a046-e67da7bb805e",
-              "parentUUID": "ab939a57-c460-4ae6-a19a-de128221923e",
+              "code": "cy.visit('../../page/HtmlPage.html');\n_HtmlPObj.default.selectCheckBox(12312312);\n_HtmlPObj.default.selectRadioBox(123);\n_HtmlPObj.default.typeInTextbox('12');\n_HtmlPObj.default.selectRadioBox(123);\n_HtmlPObj.default.selectCheckBox(213);\n_HtmlPObj.default.selectCheckBox(123);\n_HtmlPObj.default.selectCheckBox(123);\ncy.wait(2000);",
+              "err": {
+                "message": "CypressError: `cy.click()` failed because it requires a DOM element.\n\nThe subject received was:\n\n  > `undefined`\n\nThe previous command that ran was:\n\n  > `cy.wrap()`",
+                "estack": "CypressError: `cy.click()` failed because it requires a DOM element.\n\nThe subject received was:\n\n  > `undefined`\n\nThe previous command that ran was:\n\n  > `cy.wrap()`\n    at isElement (http://localhost:56495/__cypress/runner/cypress_runner.js:151863:66)\n    at validateType (http://localhost:56495/__cypress/runner/cypress_runner.js:151712:14)\n    at Object.isType (http://localhost:56495/__cypress/runner/cypress_runner.js:151743:7)\n    at $Cy.pushSubject (http://localhost:56495/__cypress/runner/cypress_runner.js:151451:22)\n    at wrapped (http://localhost:56495/__cypress/runner/cypress_runner.js:151037:19)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/PageObj/HtmlPObj.js:10:44)",
+                "diff": null
+              },
+              "uuid": "dcc0d2b9-9601-4dab-9941-c1c93034386a",
+              "parentUUID": "2ceda8a0-64cc-4736-8e59-bcc2e833d636",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "587c9780-c8be-49ef-a046-e67da7bb805e"
+          "passes": [],
+          "failures": [
+            "dcc0d2b9-9601-4dab-9941-c1c93034386a"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2567,
+          "duration": 283,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -1,33 +1,33 @@
 {
   "stats": {
-    "suites": 6,
-    "tests": 6,
-    "passes": 5,
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
     "pending": 0,
-    "failures": 1,
-    "testsRegistered": 6,
-    "passPercent": 83.33333333333333,
+    "failures": 0,
+    "testsRegistered": 1,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false,
-    "start": "2023-04-16T19:52:58.812Z",
-    "end": "2023-04-16T19:53:14.818Z",
-    "duration": 16006
+    "start": "2023-04-20T20:14:07.653Z",
+    "end": "2023-04-20T20:14:10.261Z",
+    "duration": 2608
   },
   "results": [
     {
-      "uuid": "9ef0fccd-61cc-4680-b0c1-a62500dd963f",
+      "uuid": "881f8f26-27fc-4bf6-b64b-d32365d9c310",
       "title": "",
-      "fullFile": "cypress\\e2e\\12312.cy.js",
-      "file": "cypress\\e2e\\12312.cy.js",
+      "fullFile": "cypress\\e2e\\Test1.cy.js",
+      "file": "cypress\\e2e\\Test1.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "ab939a57-c460-4ae6-a19a-de128221923e",
+          "uuid": "5a9c7a8a-1abe-40b5-9837-f89c00aa8684",
           "title": "template spec",
           "fullFile": "",
           "file": "",
@@ -38,323 +38,29 @@
               "title": "passes",
               "fullTitle": "template spec passes",
               "timedOut": null,
-              "duration": 2567,
+              "duration": 2582,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.visit('../../page/siteHtml.html');\n_HtmlPObj.default.selectCheckBox(1);\n_HtmlPObj.default.selectRadioBox(2);\n_HtmlPObj.default.selectCheckBox(3);\n_HtmlPObj.default.typeInTextbox('4');\ncy.wait(2000);",
+              "code": "cy.visit('../../page/HtmlPage.html');\n_HtmlPObj.default.selectCheckBox(1);\n_HtmlPObj.default.selectRadioBox(2);\n_HtmlPObj.default.typeInTextbox('Text Box One');\ncy.wait(2000);",
               "err": {},
-              "uuid": "587c9780-c8be-49ef-a046-e67da7bb805e",
-              "parentUUID": "ab939a57-c460-4ae6-a19a-de128221923e",
+              "uuid": "95ca1b57-bc9c-41b0-863f-1cf0267b322b",
+              "parentUUID": "5a9c7a8a-1abe-40b5-9837-f89c00aa8684",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "587c9780-c8be-49ef-a046-e67da7bb805e"
+            "95ca1b57-bc9c-41b0-863f-1cf0267b322b"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2567,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "d74210b2-5c82-4109-a2c1-7de72d66607e",
-      "title": "",
-      "fullFile": "cypress\\e2e\\2.cy.js",
-      "file": "cypress\\e2e\\2.cy.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "a5853e32-3a69-4c50-a8c0-57c7f8d00eca",
-          "title": "template spec",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "passes",
-              "fullTitle": "template spec passes",
-              "timedOut": null,
-              "duration": 450,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
-              "pending": false,
-              "context": null,
-              "code": "cy.visit('../../page/siteHtml.html');\n_HtmlPObj.default.selectCheckBox(3);\n_HtmlPObj.default.selectRadioBox(4);\n_HtmlPObj.default.selectCheckBox(7);\n_HtmlPObj.default.typeInTextbox('5');\ncy.wait(2000);",
-              "err": {
-                "message": "CypressError: `cy.click()` failed because it requires a DOM element.\n\nThe subject received was:\n\n  > `undefined`\n\nThe previous command that ran was:\n\n  > `cy.wrap()`",
-                "estack": "CypressError: `cy.click()` failed because it requires a DOM element.\n\nThe subject received was:\n\n  > `undefined`\n\nThe previous command that ran was:\n\n  > `cy.wrap()`\n    at isElement (http://localhost:59737/__cypress/runner/cypress_runner.js:151863:66)\n    at validateType (http://localhost:59737/__cypress/runner/cypress_runner.js:151712:14)\n    at Object.isType (http://localhost:59737/__cypress/runner/cypress_runner.js:151743:7)\n    at $Cy.pushSubject (http://localhost:59737/__cypress/runner/cypress_runner.js:151451:22)\n    at wrapped (http://localhost:59737/__cypress/runner/cypress_runner.js:151037:19)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/PageObj/HtmlPObj.js:10:44)",
-                "diff": null
-              },
-              "uuid": "1e8675ac-590f-4032-a696-a0c1d3a93aaa",
-              "parentUUID": "a5853e32-3a69-4c50-a8c0-57c7f8d00eca",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [],
-          "failures": [
-            "1e8675ac-590f-4032-a696-a0c1d3a93aaa"
-          ],
-          "pending": [],
-          "skipped": [],
-          "duration": 450,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "30fbb3bd-1fe7-4349-9969-d9a006e35f3a",
-      "title": "",
-      "fullFile": "cypress\\e2e\\Html.cy.js",
-      "file": "cypress\\e2e\\Html.cy.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "142c90b0-9411-4ad8-827c-2b330a0d3bb6",
-          "title": "template spec",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "passes",
-              "fullTitle": "template spec passes",
-              "timedOut": null,
-              "duration": 488,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "cy.visit('../../page/siteHtml.html');\n_HtmlPObj.default.selectCheckBox(1); //min 1 max 5 (automat -1 in array)\n_HtmlPObj.default.selectRadioBox(2); //min 1 max 5 (automat -1 in array)\n_HtmlPObj.default.typeInTextbox('Test'); //input string",
-              "err": {},
-              "uuid": "811478aa-6c81-41d5-a851-8bb2bb483005",
-              "parentUUID": "142c90b0-9411-4ad8-827c-2b330a0d3bb6",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "811478aa-6c81-41d5-a851-8bb2bb483005"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 488,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "7d4c9044-4511-4e76-baeb-d73d0858eb9a",
-      "title": "",
-      "fullFile": "cypress\\e2e\\Pass.cy.js",
-      "file": "cypress\\e2e\\Pass.cy.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "61d15327-94d7-498d-b4f2-7e724e201d00",
-          "title": "template spec",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "passes",
-              "fullTitle": "template spec passes",
-              "timedOut": null,
-              "duration": 2524,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "cy.visit('../../page/siteHtml.html');\n_HtmlPObj.default.selectCheckBox(1);\n_HtmlPObj.default.selectRadioBox(2);\n_HtmlPObj.default.selectCheckBox(3);\n_HtmlPObj.default.typeInTextbox('4');\ncy.wait(2000);",
-              "err": {},
-              "uuid": "b613ca8e-cc54-491d-b07e-511359919601",
-              "parentUUID": "61d15327-94d7-498d-b4f2-7e724e201d00",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "b613ca8e-cc54-491d-b07e-511359919601"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 2524,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "83e22627-cb60-4d50-9f8b-5ea1d3bec8f6",
-      "title": "",
-      "fullFile": "cypress\\e2e\\Test.cy.js",
-      "file": "cypress\\e2e\\Test.cy.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "d86b1bed-dd5f-4bbc-bfe7-42ae9076e0a6",
-          "title": "template spec",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "passes",
-              "fullTitle": "template spec passes",
-              "timedOut": null,
-              "duration": 2564,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "cy.visit('../../page/siteHtml.html');\n_HtmlPObj.default.selectCheckBox(1);\n_HtmlPObj.default.selectRadioBox(2);\n_HtmlPObj.default.selectCheckBox(3);\n_HtmlPObj.default.typeInTextbox(4);\ncy.wait(2000);",
-              "err": {},
-              "uuid": "20322f13-8f4d-42a7-8911-8f7419abb6ab",
-              "parentUUID": "d86b1bed-dd5f-4bbc-bfe7-42ae9076e0a6",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "20322f13-8f4d-42a7-8911-8f7419abb6ab"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 2564,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "f57f41a7-5220-4442-9301-5feef5a7c477",
-      "title": "",
-      "fullFile": "cypress\\e2e\\Testunu.cy.js",
-      "file": "cypress\\e2e\\Testunu.cy.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "18a68132-0791-4312-bfea-2e751e3e7273",
-          "title": "template spec",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "passes",
-              "fullTitle": "template spec passes",
-              "timedOut": null,
-              "duration": 2666,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "cy.visit('../../page/siteHtml.html');\n_HtmlPObj.default.selectCheckBox(2);\n_HtmlPObj.default.selectRadioBox(2);\n_HtmlPObj.default.selectCheckBox(4);\n_HtmlPObj.default.typeInTextbox('123123sfdas');\ncy.wait(2000);",
-              "err": {},
-              "uuid": "de11c39d-e25a-41f8-bf72-cad9142206bd",
-              "parentUUID": "18a68132-0791-4312-bfea-2e751e3e7273",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "de11c39d-e25a-41f8-bf72-cad9142206bd"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 2666,
+          "duration": 2582,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

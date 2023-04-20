@@ -1,0 +1,28 @@
+﻿@page
+@model TestCreator.Pages.AddElementTypeModel
+@{
+}
+
+<div class="container">
+
+    <form method="post">
+        <label for="ElementName" class="form-label">Element Name</label>
+        <input type="text" class="form-control" id="ElementName" asp-for="AddElementTypeRequest.ElementName">
+        <label for="Page Name" class="form-label">Page Name</label>
+
+        <select class="form-select" aria-label="Default select example" id="PageName" asp-for="AddElementTypeRequest.LenghtCount" required>
+
+        @foreach(var el in Model.PagesNames){
+                <option value="@el.ID">@el.PageName</option>
+        }
+        </select>
+        
+
+
+
+        <div class="mb-3" style="padding:10px">
+            <button class="btn btn-success" type="submit" >Submit</button>
+        </div>
+
+    </form>
+</div>

@@ -1,0 +1,55 @@
+﻿@page
+@model TestCreator.Pages.AutoFormModel
+@{
+    int counter = 0;
+}
+
+<div class="container">
+
+    <form method="post">
+        @if (Model.Elements.Count >= 1)
+        {
+            <label for="FileName" class="form-label">Test Name:</label>
+            <input type="text" class="form-control" id="TestName" name="Name" >
+        }
+
+        @foreach (var element1 in Model.Elements)
+        {
+
+            @foreach (var element in Model.ElementTypes)
+            {
+
+                @if (element1.ElementTypeID == element.ID)
+                {
+
+                    <label for="@element.ElementName" class="form-label">@element.ElementName</label>
+                    <input type="text" class="form-control" id="@element.ElementName" name="@counter">
+                    counter++;
+                }
+            }
+        }
+
+        <center>
+            <br><br>
+            @if (Model.Elements.Count < 1)
+            {
+
+                <button class="btn btn-warning" asp-page-handler="AddElement">Add Page Element</button>
+            }
+            else
+            {
+                <button class="btn btn-success" type="submit" asp-page-handler="Create">Create</button>
+            }
+
+
+
+    </form>
+
+    @if (Model.Elements.Count >= 1)
+    {
+        <button class="btn btn-danger" asp-page-handler="Delete">Delete ALL</button>
+    }
+
+
+    </center>
+</div>

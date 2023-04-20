@@ -1,0 +1,65 @@
+﻿@page
+@model TestCreator.Pages.AddPageElementModel
+@{
+    string pagenm = "";
+    Guid PageID = Model.Pages.First().ID;
+}
+
+@if (Model.PageNm == null)
+{
+    <div class="container">
+        <form method="post">
+            <label for="PageName" class="form-label">Page Name</label>
+            <select class="form-select" aria-label="Default select example" id="PageName" asp-for="PageNm">
+                @foreach (var pageID in Model.Pages)
+                {
+                    <option value="@pageID.PageName">@pageID.PageName</option>
+                }
+
+            </select>
+            <button class="btn btn-warning" asp-page-handler="SelectPage">Select Page</button>
+        </form>
+    </div>
+}
+else
+{
+    foreach (var ele in Model.Pages)
+    {
+        if (ele.PageName == Model.PageNm) PageID = ele.ID;
+    }
+
+
+    <div class="container">
+
+        <form method="post">
+
+            <label for="PageName" class="form-label">Page Name</label>
+
+
+            <select class="form-select" aria-label="Default select example" id="PageName" asp-for="PageElement.PageID" >
+                <option value="@PageID">@Model.PageNm</option>
+            </select>
+
+
+            <label for="Element Type" class="form-label">Element Type</label>
+
+            <select class="form-select" aria-label="Default select example" id="ElementName" asp-for="PageElement.ElementID" required>
+                @foreach (var element in Model.ElementTypes)
+                {
+                    @if (element.PageNameID == PageID)
+                    {
+                        <option value="@element.ID">@element.ElementName</option>
+                    }
+
+                }
+
+            </select>
+
+
+            <div class="mb-3" style="padding:10px">
+                <button class="btn btn-success" type="submit" asp-page-handler="Save">Submit</button>
+            </div>
+
+        </form>
+    </div>
+}
