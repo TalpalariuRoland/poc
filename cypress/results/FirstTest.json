@@ -12,22 +12,22 @@
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false,
-    "start": "2023-04-20T20:14:07.653Z",
-    "end": "2023-04-20T20:14:10.261Z",
-    "duration": 2608
+    "start": "2023-04-25T14:20:32.173Z",
+    "end": "2023-04-25T14:20:33.053Z",
+    "duration": 880
   },
   "results": [
     {
-      "uuid": "881f8f26-27fc-4bf6-b64b-d32365d9c310",
+      "uuid": "700beace-64ea-490a-bdd9-29607cc58cec",
       "title": "",
-      "fullFile": "cypress\\e2e\\Test1.cy.js",
-      "file": "cypress\\e2e\\Test1.cy.js",
+      "fullFile": "cypress\\e2e\\TestOne.cy.js",
+      "file": "cypress\\e2e\\TestOne.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "5a9c7a8a-1abe-40b5-9837-f89c00aa8684",
+          "uuid": "f5a193a6-9b06-4c84-913b-daf9adb18960",
           "title": "template spec",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "passes",
               "fullTitle": "template spec passes",
               "timedOut": null,
-              "duration": 2582,
+              "duration": 865,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.visit('../../page/HtmlPage.html');\n_HtmlPObj.default.selectCheckBox(1);\n_HtmlPObj.default.selectRadioBox(2);\n_HtmlPObj.default.typeInTextbox('Text Box One');\ncy.wait(2000);",
+              "code": "cy.visit('../../page/HtmlPage.html');\n_HtmlPage.default.selectCheckBox('1');\n_HtmlPage.default.selectRadioBox('3');\n_HtmlPage.default.typeInTextbox('Text');\n_HtmlPage.default.selectRadioBox('3');\n_HtmlPage.default.selectCheckBox('2');\n_HtmlPage.default.selectCheckBox('3');\n_HtmlPage.default.selectCheckBox('1');",
               "err": {},
-              "uuid": "95ca1b57-bc9c-41b0-863f-1cf0267b322b",
-              "parentUUID": "5a9c7a8a-1abe-40b5-9837-f89c00aa8684",
+              "uuid": "b377e4c9-3115-4b86-addb-d3b31a07c619",
+              "parentUUID": "f5a193a6-9b06-4c84-913b-daf9adb18960",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "95ca1b57-bc9c-41b0-863f-1cf0267b322b"
+            "b377e4c9-3115-4b86-addb-d3b31a07c619"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2582,
+          "duration": 865,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -11,7 +11,6 @@ namespace TestCreator.CypressTests
 
         public string[] endString =
         {
-            "cy.wait(2000);",
             "  })",
             "})",
         };
@@ -20,7 +19,7 @@ namespace TestCreator.CypressTests
         {
             string[] StartingString =
         {
-            "import HtmlPage from '../PageObj/HtmlPObj'",
+            "import HtmlPage from '../PageObj/"+PageName+"'",
             "describe('template spec', () => {",
             "  it('passes', () => {",
             "    cy.visit('../../page/"+PageName+".html')",
@@ -37,22 +36,9 @@ namespace TestCreator.CypressTests
                 {
                     if (testStep.ElementTypeID == element.ID)
                     {
-                        switch (element.ElementName)
-                        {
-                            case "CheckBox":
-                                TestString.Add(PageName + ".selectCheckBox(" + testStep.TestVariable.ToString() + ");");
-                                break;
+                       
+                                TestString.Add(PageName + "."+element.ElementName+"('" + testStep.TestVariable.ToString() + "');");
 
-                            case "RadioBox":
-                                TestString.Add(PageName + ".selectRadioBox(" + testStep.TestVariable.ToString() + ");");
-                                break;
-
-                            case "Textbox":
-                                TestString.Add(PageName + ".typeInTextbox('" + testStep.TestVariable.ToString() + "');");
-                                break;
-
-
-                        }
 
                     }
                 }
